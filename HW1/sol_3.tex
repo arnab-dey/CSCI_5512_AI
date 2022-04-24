@@ -1,0 +1,25 @@
+%----------------------------------------------------------------------------------------
+%	SOLUTION 3
+%----------------------------------------------------------------------------------------
+\subsection*{Solution 3}
+The objective is to
+\begin{align*}
+	\min\limits_{w \in \mathbb{R}^p} \frac{1}{2} \Vert y - Xw \Vert^2 + \frac{c}{2}\Vert w \Vert^2,
+\end{align*}
+where $X \in \mathbb{R}^{n \times p}, y \in \mathbb{R}^n$ and $c>0$ is a constant.
+
+The cost function is
+\begin{align*}
+	J(w) = \frac{1}{2} (y-Xw)^T(y-Xw) + \frac{c}{2}w^Tw.
+\end{align*}
+Therefore,
+\begin{align}\label{eq:partial_deri}
+	\frac{\partial J(w)}{\partial w} = -X^T(y-Xw) + c w.
+\end{align}
+Equating~(\ref{eq:partial_deri}) to $0$, we obtain:
+\begin{align*}
+	& -X^Ty+X^TXw^*+cw^* = 0\\
+	\implies & (X^TX+cI)w^* = X^Ty\\
+	\implies & w^* = (X^TX+cI)^{-1}X^Ty,
+\end{align*}
+where $I \in \mathbb{R}^{p \times p}$ is an identity matrix.

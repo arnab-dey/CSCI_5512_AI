@@ -1,0 +1,29 @@
+%----------------------------------------------------------------------------------------
+%	SOLUTION 1.a
+%----------------------------------------------------------------------------------------
+\subsection*{Solution 1.a}
+As each of the $5$ different colored dice can have $12$ different numbers, the total number of atomic events is $12^5$.
+%----------------------------------------------------------------------------------------
+%	SOLUTION 1.b
+%----------------------------------------------------------------------------------------
+\subsection*{Solution 1.b}
+The probability of each atomic event is $\frac{1}{12^5}$.
+%----------------------------------------------------------------------------------------
+%	SOLUTION 1.c
+%----------------------------------------------------------------------------------------
+\subsection*{Solution 1.c}
+We can choose any one number from $12$ different numbers. Then, for that number, we can choose $3$ different colors out of $5$. After, choosing the first number, we will be left with $11$ numbers from which we have to choose one. Then for this number, we can choose $2$ out of $5$ different colors. Therefore, the total number of events are:
+\begin{align*}
+	\text{Total number of events } = {12 \choose 1} {5 \choose 3} {11 \choose 1} {5 \choose 2} = 13200.
+\end{align*}
+Therefore, the probability of rolling a full house is $\frac{13200}{12^5} = 0.053$.
+%----------------------------------------------------------------------------------------
+%	SOLUTION 1.d
+%----------------------------------------------------------------------------------------
+\subsection*{Solution 1.d}
+For four of a kind, we can choose any one number out of $12$, then for this number we can choose any $4$ colors out of $5$. The other number can be chosen from $11$ different numbers and for this number we will have choice of $1$ color out of $5$ different colors. Therefore, the total number of events are:
+\begin{align*}
+	\text{Total number of events } = {12 \choose 1}{5 \choose 4}{11 \choose 1}{5 \choose 1} = 3300.
+\end{align*}
+Therefore, the probability of four of a kind is $\frac{3300}{12^5} = 0.013$.
+\parag

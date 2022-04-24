@@ -1,0 +1,15 @@
+%----------------------------------------------------------------------------------------
+%	SOLUTION 5
+%----------------------------------------------------------------------------------------
+\subsection*{Solution 5}
+The probability density function $p(x;\mu,\Sigma), x\in \mathbb{R}^d$ of a multivariate Gaussian distribution with mean $\mu \in \mathbb{R}^d$ and covariance $\Sigma \in \mathbb{R}^{d\times d}$ is
+\begin{align*}
+	p(x;\mu,\Sigma) = \frac{1}{(2\pi)^{\frac{d}{2}} |\Sigma|^{\frac{1}{2}}}e^{-\frac{1}{2}(x-\mu)^T\Sigma^{-1}(x-\mu)},
+\end{align*}
+where $|\Sigma|$ denotes the determinant of $\Sigma$.
+
+If the precision matrix is denoted by $\Theta = \Sigma^{-1}$, then
+\begin{align*}
+	p(x;\mu,\Theta^{-1}) = \frac{1}{(2\pi)^{\frac{d}{2}}}|\Theta|^{\frac{1}{2}}e^{-\frac{1}{2}(x-\mu)^T\Theta(x-\mu)},
+\end{align*}
+where $|\Theta|$ is the determinant of the precision matrix $\Theta$.
